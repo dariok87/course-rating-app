@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Star from './Star';
 
 class StarRating extends Component {
 
@@ -15,7 +15,9 @@ class StarRating extends Component {
 
     for (let i = 0; i < maxRating; i++) {
       stars.push(
-
+        <Star 
+          key={i}
+        />
       );
     }
   }
